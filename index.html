@@ -241,13 +241,21 @@
       background: rgba(176,141,87,0.35);
     }
     .detail-icon {
-      width: 62px; height: 62px;
+      width: 80px; height: 80px;
       border-radius: 50%;
       display: grid; place-items: center;
       margin: 0 auto 1.2rem;
       background: rgba(242,225,182,0.45);
       color: var(--gold);
-      font-size: 1.4rem;
+      font-size: 1rem;
+      line-height: 1;
+      text-align: center;
+      padding: 0.4rem;
+    }
+    .detail-icon span {
+      display: block;
+      font-weight: 600;
+      letter-spacing: 0.02em;
     }
     .detail-card-title {
       font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
@@ -664,7 +672,7 @@
     <div class="details-cards">
       <!-- ✦ CHANGE each card's content ✦ -->
       <div class="detail-card reveal">
-        <div class="detail-icon">📅</div>
+        <div class="detail-icon"><span>28</span></div>
         <p class="detail-card-title">Date</p>
         <p class="detail-main">28 April 2026</p>
         <p class="detail-sub">Tuesday</p>
